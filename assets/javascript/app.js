@@ -32,6 +32,8 @@ function generateGifs(){
                 }
 
         });
+        
+        
 
     }
 
@@ -57,8 +59,9 @@ $('.addGifButton').on('click', function(){
 		var newGif = $('.userInput').val().trim();
 		gifArray.push(newGif);
 		renderButtons();
+        $(".userInput").val('');
 		return false;
-
+        
 	});
 
 
