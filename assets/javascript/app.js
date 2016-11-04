@@ -4,7 +4,7 @@ gifArray = ["dog", "cat", "fish", "ice cream", "coffee", "tea", "odell", "backfl
 function generateGifs(){
 
         var searchWord = $(this).attr('data-name');
-        var giphyBaseURL =  "http://api.giphy.com/v1/gifs/search?q=" + searchWord + "&api_key=dc6zaTOxFJmzC&limit=10";
+        var giphyBaseURL =  "https://api.giphy.com/v1/gifs/search?q=" + searchWord + "&api_key=dc6zaTOxFJmzC&limit=10";
 
         $.ajax({url: giphyBaseURL, method: "GET"}).done(function(response){
 
